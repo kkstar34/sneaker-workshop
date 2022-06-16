@@ -10,11 +10,13 @@
     --orange : hsl(26, 100%, 55%);
     --light-orange : hsl(25, 100%, 94%);
     --light-gray :hsl(219, 9%, 45%);
+    --grayish--blue : hsl(220, 14%, 75%);
+    --light--grayish--blue : hsl(223, 64%, 98%);
 }
 
 body{
     font-family: 'Kumbh Sans', sans-serif;
-    padding: 0 150px 0 150px;
+    padding: 0 200px 0 200px;
 }
 
 a{
@@ -80,12 +82,12 @@ main{
 
 .cart--right{
     width: 50%;
-    border: 1px solid  green;
+    /* border: 1px solid  green; */
 }
 
 .image--product--container{
-    border: 1px solid orange;
-    width: 60%;
+    /* border: 1px solid orange; */
+    width: 70%;
     height: 80%;
     overflow: hidden;
     border-radius: 1rem;
@@ -121,7 +123,7 @@ main{
 
 .footer--container{
    
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     padding : 0.5rem 0 0.5rem 0;
@@ -139,6 +141,191 @@ main{
     width: 100%;
 }
 
+.cart--right{
+    padding: 5.5rem 0.5rem 0rem 0.5rem;
+}
+.cart--right--main{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.cart--right--title{
+    color: var(--orange);
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+.cart--right-content p{
+    font-size: 16px;
+    color: var(--light-gray);
+    margin-bottom: 1rem;
+}
+
+.discount-rate{
+    font-size: 0.7rem;
+    margin-left: 0.5rem;
+    background-color: var(--light-orange);
+    color: var(--orange);
+    padding : 0.2rem;
+    border-radius: 0.2rem;
+}
+
+.old-price{
+    margin-top: 0.5rem;
+    color: var(--light-gray);
+    text-decoration: line-through;
+}
+
+.button--block{
+    display : flex;
+}
+
+.handle--quantity{
+    width: 40%;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    background-color: var(--light--grayish--blue);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.3rem;
+    box-shadow: 0.4rem 0.2rem 0.8rem rgba(0,0 ,0 ,0.1 );
+}
+
+.button--container{
+    width: 60%;
+}
+
+.button--container button{
+    width: 100%;
+    padding: 1.2rem 1rem 1.2rem 1rem;
+    background-color: var(--orange);
+    color: white;
+    border-radius: 0.3rem;
+    border : none;
+    cursor : pointer;
+    font-weight: bold;
+    box-shadow: 0.2rem 0.2rem 0.8rem var(--orange);
+}
+
+.menu--icon{
+    display: none;
+}
+
+.quantity--minus{
+    color: var(--orange);
+    cursor : pointer;
+}
 
 
+.quantity--plus{
+    color: var(--orange);
+    cursor : pointer;
+}
+.handle--quantity div{
+    display: flex;
+    align-items: center;
+}
 
+@media  only screen and (max-width: 375px){
+
+    body {
+        padding: 0 0 0 0;
+    }
+    .navbar--links{
+        display : none;
+    }
+    nav{
+        border : none;
+    }
+
+    .navbar--right{
+        margin-right: 1.5rem;
+    }
+
+    .image--container{
+        height : 35px;
+        width : 35px;
+    }
+
+    .navbar--icon--container{
+        width: 0px;
+        height: 16px;
+    }
+    .navbar--left{
+        margin-left: 1.5rem;
+    }
+
+    .menu--icon{
+        display: block;
+    }
+
+
+    .navbar--brand{
+        display: flex;
+        align-items : center;
+        width : 100%;
+    }   
+
+    .navbar--brand h1{
+        margin-left: 0.8rem;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    main{
+        display : block;
+        padding : 0 0   0   0;
+
+        height : auto;
+    }
+
+    .cart--left--footer{
+        display :none;
+    }
+
+    .cart--left{
+        display: block;
+        width: 100%;
+    }
+
+    .cart--left--header {
+        height: inherit;
+        display: block;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+
+    .image--product--container {
+        /* border: 1px solid orange; */
+        width: 100%;
+        border-radius: 0rem;
+    }
+
+    .image--product--container img{
+        /* border: 1px solid orange; */
+        width: 100%;
+        height: auto;
+        border-radius: 0rem;
+    }
+
+    .cart--right{
+        width: 100%;
+        padding: 0 1rem 0 1rem; 
+        margin-top: 1rem;   
+    }
+
+    .button--block{
+        flex-direction: column;
+    }
+
+    .handle--quantity{
+        width: 100%;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+    .button--container{
+        margin-top: 0.5rem;
+        width: 100%;
+        
+    }
+}
