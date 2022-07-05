@@ -129,11 +129,16 @@ main{
     padding : 0.5rem 0 0.5rem 0;
 }
 
+.overlay{
+    border: 3px solid var(--orange);
+    opacity: 0.4;
+}
 
 
 .image--product--container--thumbnail{
     width: 20%;
     border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 .image--product--container--thumbnail img{
